@@ -9,9 +9,9 @@ app = Flask(__name__)
 nlp = spacy.load('en_core_web_sm')
 
 # Load sample data
-country_table = pd.read_csv("data\\countries.csv")["name"].tolist()
-city_table = pd.read_csv("data\\cities.csv")["name"].tolist()
-state_table = pd.read_csv("data\\states.csv")["name"].tolist()
+country_table = pd.read_csv("data\countries.csv")["name"].tolist()
+city_table = pd.read_csv("data\cities.csv")["name"].tolist()
+state_table = pd.read_csv("data\states.csv")["name"].tolist()
 
 # Function to perform entity extraction and fuzzy matching
 def process_input(input_text):
