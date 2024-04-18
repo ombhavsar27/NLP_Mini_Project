@@ -6,7 +6,7 @@ import spacy
 app = Flask(__name__)
 
 # Load SpaCy model
-nlp = spacy.load('en_core_web_lg')
+nlp = spacy.load('en_core_web_sm')
 
 # Load sample data
 country_table = pd.read_csv("D:\\VS Code\\NLP Mini Project\\NLP_Mini_Project\\data\\countries.csv")["name"].tolist()
