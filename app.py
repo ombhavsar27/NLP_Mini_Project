@@ -51,3 +51,6 @@ def process_text():
     input_text = request.form['inputText']
     results = process_input(input_text)
     return jsonify(results)
+
+# if __name__ == '__main__':
+#     app.run(debug=True)

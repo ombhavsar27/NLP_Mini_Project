@@ -5,7 +5,7 @@ from fuzzywuzzy import process
 # Load spaCy English model
 nlp = spacy.load("en_core_web_lg")
 
-known_entities = pd.read_csv("data\\cities.csv")
+known_entities = pd.read_csv("D:\\VS Code\\NLP Mini Project\\NLP_Mini_Project\\data\\cities.csv")
 known_entities = known_entities['name'].tolist()
 # Sample text with potential typos
 text = "The United Nations is an international organization founded in 1945.\
