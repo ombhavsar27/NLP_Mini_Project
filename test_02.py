@@ -4,16 +4,16 @@ import spacy
 nlp = spacy.load('en_core_web_lg')
 
 # Sample canonical tables
-country_table = pd.read_csv("D:\\VS Code\\NLP Mini Project\\data\\countries.csv")
+country_table = pd.read_csv("D:\\VS Code\\NLP Mini Project\\NLP_Mini_Project\\data\\countries.csv")
 country_table = country_table["name"].tolist()
 
 # print(country_table.head())
 
-city_table = pd.read_csv("D:\\VS Code\\NLP Mini Project\\data\\cities.csv")
+city_table = pd.read_csv("D:\\VS Code\\NLP Mini Project\\NLP_Mini_Project\\data\\cities.csv")
 city_table = city_table["name"].tolist()
 
 # print(city_table.head())
-state_table = pd.read_csv("D:\\VS Code\\NLP Mini Project\\data\\states.csv")
+state_table = pd.read_csv("D:\\VS Code\\NLP Mini Project\\NLP_Mini_Project\\data\\states.csv")
 state_table = state_table["name"].tolist()
 
 # Sample input sentence
